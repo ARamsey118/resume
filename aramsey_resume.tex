@@ -1,0 +1,106 @@
+%-----------------------------------------
+% Michael Wright
+% Resumé
+%
+% URL: http://github.com/mdwrigh2/resume
+% This document is covered under the Creative Commons Attribution 3.0 Unported License
+%-----------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,letterpaper,final]{moderncv}
+\usepackage{fontspec}
+\moderncvtheme{classic}
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}
+\AtBeginDocument{\recomputelengths}
+% FONTS
+\usepackage[utf8]{inputenc}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+% Remove % to set to different fonts
+%\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
+%\setmonofont[Scale=0.8]{Monaco} 
+
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% ---- MARGIN YEARS
+%\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+
+
+% Personal Information 
+\firstname{Andrew}
+\familyname{Ramsey}
+\address{1943 Lucille Lane}{Pleasant Hill, CA 94523}
+\mobile{(925) 639-2609}
+\email{axr8451@rit.edu}
+\homepage{www.github.com/ARamsey118}
+
+\title{Andrew Ramsey's Resume}
+
+\nopagenumbers{}
+
+\begin{document}
+
+\maketitle
+
+\section{Computer Skills} 
+  \cvline{Languages:}{Python, Java, C/C++, \LaTeX{}, MATLAB, Bash}
+  \cvline{Software:}{Linux, Pycharm, Intellij, Git, Vim}
+  \cvline{Interests:}{Machine Learning, Open Source, Hardware Evolution}
+\section{Projects} 
+  \cventry{October 2014 -- Present}{Clue}{}{}{}{
+	  An effort to recreate the board game Clue on the Computer 
+      \begin{itemize}
+        \item Graph Theory
+        \item Graphics
+        \item Artificial Intelligence
+      \end{itemize}
+  }
+  \cventry{Spring 2015}{Reverse Javadocs}{}{}{}{
+    Simplifies the creation of Java classes and package structure
+    \begin{itemize}
+      \item HTML Parsing
+      \item Version Control
+    \end{itemize}
+  }
+  \cventry{May 2014 -- Present}{Linux}{}{}{}{
+    Installed and used a variety of Linux distrso
+    \begin{itemize}
+      \item Learned to use a CLI to do tasks such as network configuration, file and package management and basic scripting
+      \item Discovered how various OS components function by breaking and repairing them
+    \end{itemize}
+  }
+  \cventry{Nov. 2014 -- May 2015}{Freescale Car Competition}{}{}{}{
+    Build and program an autonomous car to compete in an international race
+    \begin{itemize}
+      \item Become familiar with MATLAB, Simulink, and EMBED
+      \item Get experience working in a team of varying skill levels
+      \item Learn to work with others' code
+    \end{itemize}
+    \vspace{2pt}
+  }
+\section{Jobs}
+  \cventry{Summer 2015}{Summer Laborer}{Central Contra Costa Sanitary District}{}{}{
+    Maintain the sanitary district in good working order
+    \begin{itemize}
+      \item Work independently and in groups without direct supervision
+      \item Ensure that tasks were completed on time and correctly
+    \end{itemize}
+    \vspace{2pt}
+  }
+\section{Education}
+\cventry{Fall 2014 -- Present}{Computer Engineering, Rochester Institute of Technology}{}{}{Overall GPA: 3.95}{}
+\section{Extra}
+  \cvlistitem{Eagle Scout Award}
+  \cvlistitem{Contra Costa County Sheriff's Search and Rescue}
+  \cvlistitem{Completed Advanced German II}
+\end{document}
