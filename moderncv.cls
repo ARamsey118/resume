@@ -366,7 +366,7 @@
     \ifthenelse{\equal{#3}{}}{}{, {\slshape#3}}%
     \ifthenelse{\equal{#4}{}}{}{, #4}%
     \ifthenelse{\equal{#5}{}}{}{, #5}%
-    .%
+    %
     \ifx&#6&%
       \else{\newline{}\begin{minipage}[t]{\linewidth}\small#6\end{minipage}}\fi%
   }}%
