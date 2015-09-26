@@ -194,7 +194,7 @@
 %                style commands definitions
 %-------------------------------------------------------------------------------
 % symbols used 
-\providecommand*{\listitemsymbol}{\Neutral}%{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}}
+\providecommand*{\listitemsymbol}{\mbox{\small$\bullet$}}%{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}}
 \providecommand*{\addresssymbol}{}
 \providecommand*{\mobilesymbol}{\Mobilefone}
 \providecommand*{\phonesymbol}{\Telefon}
