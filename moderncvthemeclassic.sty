@@ -24,6 +24,10 @@
 % color options
 % blue (default option)
 \DeclareOption{blue}{}
+%darkblue 
+\newif\if@colordarkblue\@colordarkbluetrue
+\DeclareOption{darkblue}{\@colordarkbluetrue}
+
 % orange
 \newif\if@colororange\@colororangefalse
 \DeclareOption{orange}{\@colororangetrue}
@@ -70,6 +74,13 @@
   \definecolor{sectionrectanglecolor}{rgb}{0.25,0.5,0.75}
   \definecolor{sectiontitlecolor}{rgb}{0.2,0.4,0.65}
   \definecolor{subsectioncolor}{rgb}{0.2,0.4,0.65}
+  % .25 = 63.75 .5 = 127.5 .75 = 191.25
+\if@colordarkblue
+  \definecolor{addresscolor}{rgb}{0.2,0.4,0.65}
+  \definecolor{sectionrectanglecolor}{rgb}{0.25,0.5,0.75}
+  \definecolor{sectiontitlecolor}{rgb}{0.2,0.4,0.65}
+  \definecolor{subsectioncolor}{rgb}{0.2,0.4,0.65}
+
 \if@colororange
   \definecolor{addresscolor}{rgb}{0.95,0.55,0.15}
   \definecolor{sectionrectanglecolor}{rgb}{1,0.65,0.20}
