@@ -8,6 +8,8 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
+
+
 \documentclass[12pt,letterpaper,final]{moderncv}
 \usepackage{fontspec}
 \moderncvtheme[darkblue]{classic}
@@ -58,47 +60,65 @@
 
 \vspace{20pt}
 \section{Education}
-\cventry{Aug. 2014 -- Present}{Computer Engineering}{Rochester Institute of Technology}{Overall GPA: 3.95}{Honors}{% 
+\cventry{Aug. 2014 -- Present}{Computer Engineering}{Rochester Institute of Technology}{Overall GPA: 3.96}{Honors}{% 
     \begin{multicols}{2}
         \begin{itemize}
-            \item Assembly Language with Lab
             \item Digital System Design II with Lab
+            \item Assembly Language with Lab
             \item Circuit Analysis I with Lab
             \item Circuit Analysis II
             \item Electronics I with Lab
             \item Product Innovation
-         \end{itemize}
+        \end{itemize}
     \end{multicols}
 }
 \section{Computer Skills}
-  \cvline{Languages:}{Python, Assembly, C, \LaTeX, VHDL, Bash, Java} 
-  \cvline{Software:}{Linux, Git, Keil $\mu$Vision, OrCAD PSpice, Altera Quartus, ModelSim, Vim}
-  \cvline{Interests:}{Embedded Systems, Machine Learning, Open Source, Hardware Evolution}
-  \cvline{Hardware:}{Spartan 6 FPGA, Cortex-M0+, Oscilloscope, Multimeter, Function Generator}
+\cvline{Languages:}{C, VHDL, Verilog, Python, Assembly, LaTeX, Bash} 
+\cvline{Software:}{Linux, Vivado, ISE, ModelSim, OrCAD PSpice, Quartus II, GNURadio, Git, Vim}
+\cvline{Hardware:}{Xilinx FPGAs, SDRs, Cortex-M0+, Oscilloscope, Multimeter, Function Generator}
+\cvline{Interests:}{Hardware Design, Hardware Evolution, Embedded Systems, Open Source}
+\section{Jobs}
+\cventry{May 2016 -- Present}{Computer Engineering Intern}{Parsons Corporation}{}{}{%
+    Designing FPGA programs and software defined radio based applications
+    \begin{itemize}
+        \item Integrating and testing prebuilt and custom IP to create a complete FPGA design
+        \item Generated spec-compliant radio transmissions based on decoded data
+        \item Replaced GNURadio with a custom, lightweight version using only C
+    \end{itemize}
+}
+\cventry{Aug. 2015 -- Present}{Teaching Assistant \& Mentor}{Rochester Institute of Technology}{}{}{%
+    Assist first-year students in lab exercises and adjusting to college
+    \begin{itemize}
+        \item Graded lab exercises and reports
+        \item Explained digital design concepts in a straightforward manner
+        \item Rewrote lab handouts to be understandable and self-contained
+    \end{itemize}
+}
+
 \section{Projects} 
-  \cventry{Dec. 2015 -- Present}{Mastermind}{}{}{}{%
-      The game of Mastermind on the Freescale Freedom KL46Z
-      \begin{itemize}
-          \item Wrote mixed C and ARM Assembly to provide software functionality
-          \item Enhanced the game using RGB LEDs for feedback
-          \item Designing a PCB to use as an outreach tool for children
-      \end{itemize}
-    }
-    \cventry{Nov. 2014 -- \phantom{..}May 2015}{Freescale Car Competition}{}{}{}{%
+\cventry{Dec. 2015 -- Present}{Mastermind}{}{}{}{%
+    The game of Mastermind on the Freescale Freedom KL46Z
+    \begin{itemize}
+        \item Designing a PCB to use as an outreach tool for children
+        \item Wrote mixed C and ARM Assembly to provide software functionality
+        \item Enhanced the game using RGB LEDs for feedback
+    \end{itemize}
+}
+\cventry{Oct. 2014 -- Present}{Clue}{}{}{}{%
+    An effort to recreate the board game Clue on the computer in C
+    \begin{itemize}
+        \item Learning how to create complex data structures in C
+        \item Developed a decision model based on real world experience
+        \item Self taught graph theory principles
+    \end{itemize}
+}
+\cventry{Nov. 2014 -- \phantom{..}May 2015}{Freescale Car Competition}{}{}{}{%
     Built and programmed an autonomous car to compete in an international race
     \begin{itemize}
-      \item Develop with MATLAB, Simulink, and mbed
-      \item Learn to work with others' code
+        \item Developed with MATLAB, Simulink, and mbed
+        \item Learned to work with others' code
     \end{itemize}
-  }
-  \cventry{Oct. 2014 -- Oct. 2015}{Clue}{}{}{}{%
-	  An effort to recreate the board game Clue on the computer in Java
-      \begin{itemize}
-        \item Developed a decision model based on real world experience
-        \item Explored Java graphics using JavaFX
-        \item Self taught graph theory principles
-      \end{itemize}
-  }
+}
 %  \cventry{Spring 2015}{Reverse Javadocs}{}{}{}{
 %    Simplified the creation of Java classes and package structure using Python and Beautiful Soup
 %    \begin{itemize}
@@ -106,33 +126,22 @@
 %      \item Discovered how to use git features, such as blame and bisect
 %    \end{itemize}
 %  }
-  %\cventry{May 2014 -- Present}{Linux}{}{}{}{
-  %  Installed and used a variety of Linux distros
-  %  \begin{itemize}
-  %    \item Learned to use a CLI to do tasks such as network configuration, file and package management and basic scripting
-  %    \item Discovered how various OS components function by breaking and repairing them
-  %  \end{itemize}
-  %}
-\section{Jobs}
-  \cventry{Summer 2015}{Summer Laborer}{Central Contra Costa Sanitary District}{}{}{%
-    Maintained the Sanitary District in good working order
-    \begin{itemize}
-      \item Worked independently and in groups without direct supervision
-      \item Launched recycled water program, ensuring customer satisfaction and environmentally friendly practices
-    \end{itemize}
-  }
-  \cventry{Aug. 2015 - Present}{Teaching Assistant \& Mentor}{Rochester Institute of Technology}{}{}{%
-    Assist first-year students in lab exercises and adjusting to college
-    \begin{itemize}
-      \item Guide freshman through their first year of college
-      \item Grade lab exercises and reports
-    \end{itemize}
-}
-\section{Leadership}
-\cvline{}{Eagle Scout Award \& Scholarship}
-  \vspace{-16pt}
+%\cventry{May 2014 -- Present}{Linux}{}{}{}{
+%  Installed and used a variety of Linux distros
+%  \begin{itemize}
+%    \item Learned to use a CLI to do tasks such as network configuration, file and package management and basic scripting
+%    \item Discovered how various OS components function by breaking and repairing them
+%  \end{itemize}
+%}
 
-  \cvline{}{Contra Costa County Sheriff's Search and Rescue}
-  \vspace{-16pt}
-  
+\section{Extracurriculars}
+\cvline{}{Eagle Scout Award \& Scholarship, Assistant Scout Master}
+\vspace{-16pt}
+
+\cvline{}{Contra Costa County Sheriff's Search and Rescue}
+\vspace{-16pt}
+
+\cvline{}{Launch Initiative -- Avionics}
+\vspace{-16pt}
+
 \end{document}
