@@ -5,98 +5,48 @@
 % This document is covered under the Creative Commons Attribution 3.0 Unported License
 %-----------------------------------------
 
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
 
 
 
-\documentclass[12pt,letterpaper,final]{moderncv}
-\usepackage{fontspec}
-\moderncvtheme[darkblue]{classic}
+\documentclass[12pt,a4paper,sans]{moderncv}
+\moderncvtheme[blue]{classic}
 
-% DOCUMENT LAYOUT
-\usepackage[scale=0.85]{geometry}
-\setlength{\hintscolumnwidth}{2cm}
-\AtBeginDocument{\recomputelengths}
-% FONTS
-\usepackage[utf8]{inputenc}
-\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
-
-\usepackage{multicol}
-% Remove % to set to different fonts
-%\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
-%\setmonofont[Scale=0.8]{Monaco} 
-
-% ---- CUSTOM AMPERSAND
-\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
-
-% ---- MARGIN YEARS
-%\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+% Make font look better
+\usepackage{microtype}
 
 % ------MARGINS
-\newgeometry{top=1.5cm,bottom=0.1cm,left=1.5cm,right=1.5cm}
-
-% ------ITEMIZE VERTICAL SPACING
-\usepackage{enumitem}
-\setitemize{nolistsep}
+\usepackage[scale=0.75]{geometry}
 % PDF SETUP
 % ---- FILL IN HERE THE DOC TITLE AND AUTHOR
 
 % Personal Information 
 \firstname{Andrew}
 \familyname{Ramsey}
-\address{1943 Lucille Lane}{Pleasant Hill, CA 94523}
+\address{6000 Reynolds Drive 0875}{Rochester, NY 14623}
 \mobile{(925) 639-2609}
 \email{axr8451@rit.edu}
-\homepage{www.github.com/ARamsey118}
+\social[github]{ARamsey118}
+\extrainfo{17.10.1995, Los Angeles}
+\photo[100 pt][0.4pt]{head}
+\quote{Computer Engineering student interested in the fields of RF and DSP. Praised for the ability to learn new subjects and be able to apply them to the work at hand.}
 
-\title{Andrew Ramsey's Resume}
+\title{Curriculum Vitae}
 
 \nopagenumbers{}
 
 \begin{document}
-
-\mbox{\maketitle}
-
-\vspace{20pt}
+\maketitle
+\vspace{-20pt}
 \section{Education}
-\cventry{Aug. 2014 -- Present}{Computer Engineering}{Rochester Institute of Technology}{Overall GPA: 3.96}{Honors}{% 
-    \begin{multicols}{2}
-        \begin{itemize}
-            \item Digital System Design II with Lab
-            \item Assembly Language with Lab
-            \item Circuit Analysis I with Lab
-            \item Circuit Analysis II
-            \item Electronics I with Lab
-            \item Product Innovation
-        \end{itemize}
-    \end{multicols}
-}
+\cventry{Aug. 2014 - Present}{Computer Engineering}{Rochester Institute of Technology}{Rochester, NY. GPA: 3.96}{Honors}{}
+\cventry{Aug. 2010 - June 2014}{High School Diploma}{College Park High School}{Pleasant Hill, CA. GPA: 4.00}{}{}
 \section{Computer Skills}
-\cvline{Languages:}{C, VHDL, Verilog, Python, Assembly, LaTeX, Bash} 
-\cvline{Software:}{Linux, Vivado, ISE, ModelSim, OrCAD PSpice, Quartus II, GNURadio, Git, Vim}
+\cvline{Languages:}{VHDL, C, Verilog, Python, Assembly, LaTeX, Bash} 
+\cvline{Software:}{Linux, Vivado, ISE, ModelSim, OrCAD PSpice, Quartus II, GNURadio, Git}
 \cvline{Hardware:}{FPGAs, SDRs, Cortex-M0+, Oscilloscope, Multimeter, Function Generator}
 \cvline{Interests:}{Hardware Design, Digital Signal Processing, Embedded Systems, Open Source}
-\section{Jobs}
-\cventry{May 2016 -- Present}{Computer Engineering Intern}{Parsons Corporation}{}{}{%
-    Designing FPGA programs and software defined radio based applications
-    \begin{itemize}
-        \item Writing, integrating, and testing prebuilt and custom IP to create a complete FPGA design
-        \item Generated spec-compliant radio transmissions based on decoded data
-        \item Replaced GNURadio with a custom, lightweight version using only C
-    \end{itemize}
-}
-\cventry{Aug. 2015 -- Present}{Teaching Assistant \& Mentor}{Rochester Institute of Technology}{}{}{%
-    Assist first-year students in lab exercises and adjusting to college
-    \begin{itemize}
-        \item Explained digital design concepts in a straightforward manner
-        \item Rewrote lab handouts to be understandable and self-contained
-        \item Graded lab exercises and reports
-    \end{itemize}
-}
-
 \section{Projects} 
-\cventry{Dec. 2015 -- Present}{Mastermind}{}{}{}{%
+\cventry{Dec. 2015 - Present}{Mastermind}{}{}{}{%
     The game of Mastermind on the Freescale Freedom KL46Z
     \begin{itemize}
         \item Designing a PCB to use as an outreach tool for children
@@ -104,7 +54,7 @@
         \item Enhanced the game using RGB LEDs for feedback
     \end{itemize}
 }
-\cventry{Oct. 2014 -- Present}{Clue}{}{}{}{%
+\cventry{Oct. 2014 - Present}{Clue}{}{}{}{%
     An effort to recreate the board game Clue on the computer in C
     \begin{itemize}
         \item Learning how to create complex data structures in C
@@ -112,36 +62,40 @@
         \item Self taught graph theory principles
     \end{itemize}
 }
-\cventry{Nov. 2014 -- \phantom{..}May 2015}{Freescale Car Competition}{}{}{}{%
+\cventry{Nov. 2014 - \phantom{..}May 2015}{Freescale Car Competition}{}{}{}{%
     Built and programmed an autonomous car to compete in an international race
     \begin{itemize}
         \item Developed with MATLAB, Simulink, and mbed
+        \item Processed data in real time to keep the car on track
         \item Learned to work with others' code
     \end{itemize}
 }
-%  \cventry{Spring 2015}{Reverse Javadocs}{}{}{}{
-%    Simplified the creation of Java classes and package structure using Python and Beautiful Soup
-%    \begin{itemize}
-%      \item Saved two hours weekly for self and classmates
-%      \item Discovered how to use git features, such as blame and bisect
-%    \end{itemize}
-%  }
-%\cventry{May 2014 -- Present}{Linux}{}{}{}{
-%  Installed and used a variety of Linux distros
-%  \begin{itemize}
-%    \item Learned to use a CLI to do tasks such as network configuration, file and package management and basic scripting
-%    \item Discovered how various OS components function by breaking and repairing them
-%  \end{itemize}
-%}
-
 \section{Extracurriculars}
-\cvline{}{Eagle Scout Award, Assistant Scout Master}
-\vspace{-16pt}
-
-\cvline{}{Contra Costa County Sheriff's Search and Rescue}
-\vspace{-16pt}
-
-\cvline{}{Launch Initiative -- Avionics}
-\vspace{-16pt}
-
+\cventry{Jan. 2007 - Present}{Eagle Scout, Assistant Scout Master}{}{}{}{%
+    Volunteering with a local Boy Scout troop
+    \begin{itemize}
+        \item Teach middle and high school boys life and outdoor skills
+        \item Managed other scouts in order to complete projects
+    \end{itemize}
+}
+\cventry{Sep. 2016 - Present}{Launch Initiative}{Avionics}{}{}{%
+    A club that focuses on the building and launching of rockets
+    \begin{itemize}
+        \item Creating a groundstation to establish ongoing comms with the rocket
+        \item Processed RF signals with an SDR to gather telemetry data on the flight
+    \end{itemize}
+}
+\cventry{June 2013 - Jan. 2016}{Contra Costa County Sheriff's Search and Rescue}{}{}{}{%
+    Volunteered with the sheriff's office to find lost people
+    \begin{itemize}
+        \item Reunited numerous people with their families
+        \item Saved sheriff's office two million dollars each year
+        \item Trained new recruits to perform their job duties
+    \end{itemize}
+}
+\section{Languages}
+\cvlanguage{English}{Native Speaker}{}
+\cvlanguage{German}{Intermediate}{4 years of high school and 3 upper level classes in college}
+\cvlanguage{American Sign Language}{Beginner}{}
+\vfill\makecvfooter{\today}
 \end{document}
