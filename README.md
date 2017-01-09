@@ -1,2 +1,2 @@
-# resume
-A repository for my resume
+# CV
+A separate branch for my CV
