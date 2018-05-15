@@ -1,7 +1,7 @@
 %-----------------------------------------
 % Andrew Ramsey
 % Derived from Michael Wright URL: http://github.com/mdwrigh2/resume
-% 
+%
 % This document is covered under the Creative Commons Attribution 3.0 Unported License
 %-----------------------------------------
 
@@ -11,43 +11,56 @@
 % Make font look better
 \usepackage{microtype}
 \usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
 
 % ------MARGINS
 \usepackage[scale=0.75]{geometry}
+
+
+% Page numbers
+\usepackage{lastpage}
+\rfoot{\addressfont\itshape\textcolor{gray}{Page \thepage\ of \pageref{LastPage}}}
+
 % PDF SETUP
 % ---- FILL IN HERE THE DOC TITLE AND AUTHOR
 
-% Personal Information 
+% Personal Information
 \firstname{Andrew}
 \familyname{Ramsey}
 \address{6000 Reynolds Drive 0875}{Rochester, NY 14623}
 \mobile{(925) 639-2609}
 \email{axr8451@rit.edu}
 \social[github]{ARamsey118}
-\extrainfo{17. October 1995, Los Angeles}
+\extrainfo{17. October 1995, Los Angeles, USA}
 \photo[100 pt][0.4pt]{head}
-\quote{Computer Engineering student interested in the fields of RF and DSP. Enjoys learning new subjects and applying them to the work at hand.}
 
 \title{Curriculum Vitae}
 
-\nopagenumbers{}
 
 \begin{document}
 \maketitle
 \vspace{-20pt}
 \section{Education}
-\cventry{Aug. 2014 - Present}{Computer Engineering}{Rochester Institute of Technology}{Rochester, NY. GPA: 3.96}{Honors}{}
-\cventry{Aug. 2010 - June 2014}{High School Diploma}{College Park High School}{Pleasant Hill, CA. GPA: 4.00}{}{}
+\cventry{Aug. 2014 - Present}{Computer Engineering BSMS}{Rochester Institute of Technology}{Rochester, NY. GPA: 3.97/4}{Honors}{}
+\cventry{Aug. 2010 - June 2014}{High School Diploma}{College Park High School}{Pleasant Hill, CA. GPA: 4.00/4}{}{}
 \section{Computer Skills}
-\cvline{Languages:}{VHDL, C, Verilog, Python, Assembly, LaTeX, Bash} 
+\cvline{Languages:}{VHDL, Verilog, C, Python, Assembly, LaTeX, Bash}
 \cvline{Software:}{Linux, Vivado, ISE, ModelSim, OrCAD PSpice, Quartus II, GNURadio, Git}
 \cvline{Hardware:}{FPGAs, SDRs, Cortex-M0+, Oscilloscope, Multimeter, Function Generator}
 \cvline{Interests:}{Hardware Design, Digital Signal Processing, Embedded Systems, Open Source}
 \section{Jobs}
-\cventry{May 2016 -- Present}{Computer Engineering Intern}{Parsons Corporation}{}{}{%
-    Designing FPGA programs and software defined radio based applications
+\cventry{May 2017 -- Aug. 2017}{Research Assistant}{Technische Universität Dortmund }{}{}{%
+    Researched autonomous drone navigation via computer vision and ultra-wideband positioning
     \begin{itemize}
-        \item Writing, integrating, and testing prebuilt and custom IP to create a complete FPGA design
+        \item Scaled computer vision-based location using curve fitting
+        \item Achieved autonomous, scale accurate flight using only a single camera
+        \item Overcame language communication barriers to work in an international setting
+    \end{itemize}
+}
+\cventry{May 2016 -- Jan. 2017}{Computer Engineering Intern}{Parsons Corporation}{}{}{%
+    Designed FPGA programs and software defined radio based applications
+    \begin{itemize}
+        \item Wrote, integrated, and tested prebuilt and custom IP to create a complete FPGA design
         \item Generated spec-compliant radio transmissions based on decoded data
         \item Replaced GNURadio with a custom, lightweight version using only C
     \end{itemize}
@@ -61,29 +74,20 @@
     \end{itemize}
 }
 \newpage
-\section{Projects} 
-\cventry{Dec. 2015 - Present}{Mastermind}{}{}{}{%
-    The game of Mastermind on the Freescale Freedom KL46Z
+\section{Projects}
+\cventry{Jan. 2018 -- Present}{Master's Thesis}{}{}{}{%
+    Exploring compressed sensing and cyclostationary detection for UWB signals
     \begin{itemize}
-        \item Designing a PCB to use as an outreach tool for children
-        \item Wrote mixed C and ARM Assembly to provide software functionality
-        \item Enhanced the game using RGB LEDs for feedback
+        \item Implemented cyclostationary detection in software
+        \item Designing compressed sensor to be compatible with an SDR
+        \item Seeks to reduce required computational power for signal identification
     \end{itemize}
 }
-\cventry{Oct. 2014 - Present}{Clue}{}{}{}{%
-    An effort to recreate the board game Clue on the computer in C
+\cventry{Mar. 2017 -- May 2017}{Freescale Car Competition}{}{}{}{%
+    Built and programmed an autonomous car, achieving 3rd place in a multi-collegiate competition
     \begin{itemize}
-        \item Learning how to create complex data structures in C
-        \item Developed a decision model based on real world experience
-        \item Self taught graph theory principles
-    \end{itemize}
-}
-\cventry{Nov. 2014 - \phantom{..}May 2015}{Freescale Car Competition}{}{}{}{%
-    Built and programmed an autonomous car to compete in an international race
-    \begin{itemize}
-        \item Developed with MATLAB, Simulink, and mbed
-        \item Processed data in real time to keep the car on track
-        \item Learned to work with others' code
+        \item Designed filters to determine line locations
+        \item Developed embedded C code for PID control
     \end{itemize}
 }
 \section{Extracurriculars}
@@ -92,13 +96,6 @@
     \begin{itemize}
         \item Teach middle and high school boys life and outdoor skills
         \item Managed other scouts in order to complete projects
-    \end{itemize}
-}
-\cventry{Sep. 2016 - Present}{Launch Initiative}{Avionics}{}{}{%
-    A club that focuses on the building and launching of rockets
-    \begin{itemize}
-        \item Creating a groundstation to establish ongoing comms with the rocket
-        \item Processed RF signals with an SDR to gather telemetry data on the flight
     \end{itemize}
 }
 \cventry{June 2013 - Jan. 2016}{Contra Costa County Sheriff's Search and Rescue}{}{}{}{%
@@ -114,5 +111,5 @@
 \cvlanguage{German}{Intermediate}{4 years in high school and an immersion in college}
 \cvlanguage{American Sign Language}{Beginner}{}
 \vfill
-\makecvfooter{12. January 2017}
+\makecvfoot{15. May 2018}
 \end{document}

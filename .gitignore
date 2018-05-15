@@ -5,5 +5,4 @@
 *.fls
 *.fdb_latexmk
 *.synctex.gz
-.latexmkrc
 examples/

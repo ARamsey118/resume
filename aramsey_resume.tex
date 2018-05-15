@@ -1,0 +1,169 @@
+%-----------------------------------------
+% Andrew Ramsey
+% Derived from Michael Wright URL: http://github.com/mdwrigh2/resume
+% 
+% This document is covered under the Creative Commons Attribution 3.0 Unported License
+%-----------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+
+
+\documentclass[12pt,letterpaper,final]{moderncv}
+\usepackage{fontspec}
+\moderncvtheme[darkblue]{classic}
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}
+\AtBeginDocument{\recomputelengths}
+% FONTS
+\usepackage[utf8]{inputenc}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{multicol}
+% Remove % to set to different fonts
+%\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
+%\setmonofont[Scale=0.8]{Monaco} 
+
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% ---- MARGIN YEARS
+%\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+
+% ------MARGINS
+\newgeometry{top=1.5cm,bottom=0.1cm,left=1.5cm,right=1.5cm}
+
+% ------ITEMIZE VERTICAL SPACING
+\usepackage{enumitem}
+\setitemize{nolistsep}
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+
+% Personal Information 
+\firstname{Andrew}
+\familyname{Ramsey}
+%\address{1943 Lucille Lane}{Pleasant Hill, CA 94523}
+\mobile{(925) 639-2609}
+\email{axr8451@rit.edu}
+\homepage{www.github.com/ARamsey118}
+
+\title{Andrew Ramsey's Resume}
+
+\nopagenumbers{}
+
+\begin{document}
+
+\mbox{\maketitle}
+
+\vspace{10pt}
+\section{Education}
+\cventry{Aug. 2014 -- Present}{Computer Engineering BSMS}{Rochester Institute of Technology}{Overall GPA: 3.97}{Honors}{%
+    \begin{multicols}{2}
+        \begin{itemize}
+            \item Senior Design I/II
+            \item Circuits I/II with Lab
+            \item Electronics I with Lab
+            \item Digital IC Design with Lab
+            \item Communication Systems with Lab
+            \item Digital System Design I/II with Lab
+            \item Reconfigurable Computing  with Lab
+            \item Applied Programming
+            \item Digital Signal Processing
+            \item Random Signals and Noise
+            \item Assembly Language with Lab
+            \item Interface and Digital Electronics
+            \item Data \& Communication Networks
+            \item Computer Organization/Architecture
+        \end{itemize}
+    \end{multicols}
+}
+\section{Computer Skills}
+\cvline{Languages:}{VHDL, Verilog, C, Python, Assembly, LaTeX, Bash} 
+\cvline{Software:}{Linux, Vivado, ISE, ModelSim, OrCAD PSpice, Quartus II, GNURadio, Git, Vim}
+\cvline{Hardware:}{FPGAs, SDRs, Cortex-M0+, Oscilloscope, Multimeter, Function Generator}
+\section{Jobs}
+\cventry{May 2017 -- Aug. 2017}{Research Assistant}{Technische Universität Dortmund }{}{}{%
+    Researched autonomous drone navigation via computer vision and ultra-wideband positioning
+    \begin{itemize}
+        \item Scaled computer vision-based location using curve fitting
+        \item Achieved autonomous, scale accurate flight using only a single camera
+        \item Overcame language communication barriers to work in an international setting
+    \end{itemize}
+}
+\cventry{May 2016 -- Jan. 2017}{Computer Engineering Intern}{Parsons Corporation}{}{}{%
+    Designed FPGA programs and software defined radio based applications
+    \begin{itemize}
+        \item Wrote, integrated, and tested prebuilt and custom IP to create a complete FPGA design
+        \item Generated spec-compliant radio transmissions based on decoded data
+        \item Replaced GNURadio with a custom, lightweight version using only C
+    \end{itemize}
+}
+\cventry{Aug. 2015 -- Present}{Teaching Assistant \& Mentor}{Rochester Institute of Technology}{}{}{%
+    Assist first-year students in lab exercises and adjusting to college
+    \begin{itemize}
+        \item Explained digital design concepts in a straightforward manner
+        \item Rewrote lab handouts to be understandable and self-contained
+        \item Graded lab exercises and reports
+    \end{itemize}
+}
+
+\section{Projects} 
+\cventry{Aug. 2017 -- Present}{Avionics for FAR OUT Rocketry}{}{}{}{%
+    Designing a custom engine controller and flight computer for a liquid powered rocket
+    \begin{itemize}
+        \item Building a ground station using GNURadio and SDRs
+        \item Verifying link budgets and protocols through hand calculations and field testing
+        \item Developing a PCB to hold the engine controller power supply and gather engine data
+    \end{itemize}
+}
+%\cventry{Dec. 2015 -- Present}{Mastermind}{}{}{}{%
+%    The game of Mastermind on the Freescale Freedom KL46Z
+%    \begin{itemize}
+%        \item Designing a PCB to use as an outreach tool for children
+%        \item Wrote mixed C and ARM Assembly to provide software functionality
+%        \item Enhanced the game using RGB LEDs for feedback
+%    \end{itemize}
+%}
+%\cventry{Oct. 2014 -- Present}{Clue}{}{}{}{%
+%    An effort to recreate the board game Clue on the computer in C
+%    \begin{itemize}
+%        \item Developed a decision model based on real world experience
+%        \item Self taught graph theory principles
+%    \end{itemize}
+%}
+\cventry{Mar. 2017 -- \phantom{..}May 2017}{Freescale Car Competition}{}{}{}{%
+    Built and programmed an autonomous car, achieving 3rd place in a multi-collegiate competition
+    \begin{itemize}
+        \item Designed filters to determine line locations
+        \item Developed embedded C code for PID control
+    \end{itemize}
+}
+%  \cventry{Spring 2015}{Reverse Javadocs}{}{}{}{
+%    Simplified the creation of Java classes and package structure using Python and Beautiful Soup
+%    \begin{itemize}
+%      \item Saved two hours weekly for self and classmates
+%      \item Discovered how to use git features, such as blame and bisect
+%    \end{itemize}
+%  }
+%\cventry{May 2014 -- Present}{Linux}{}{}{}{
+%  Installed and used a variety of Linux distros
+%  \begin{itemize}
+%    \item Learned to use a CLI to do tasks such as network configuration, file and package management and basic scripting
+%    \item Discovered how various OS components function by breaking and repairing them
+%  \end{itemize}
+%}
+
+\section{Extracurriculars}
+\cvline{}{Eagle Scout Award, Assistant Scout Master}
+\vspace{-16pt}
+
+\cvline{}{Contra Costa County Sheriff's Search and Rescue}
+\vspace{-16pt}
+
+\cvline{}{German Club}
+\vspace{-16pt}
+
+\end{document}
